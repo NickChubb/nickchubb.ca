@@ -1,7 +1,7 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em georgia, serif, sans-serif;
+  font: 112.5%/1.45em 'Montserrat', sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -9,8 +9,8 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  color: #cfcfcf;
+  font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -18,6 +18,17 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  background-color: rgb(26,26,26);
+}
+a:link,
+a:visited
+{
+  color: seagreen;
+  text-decoration: none;
+}
+a:hover {
+  transition: .2s;
+  color: green;
 }
 article,
 aside,
@@ -108,8 +119,10 @@ sub {
 sup {
   top: -0.5em;
 }
-img {
+.header-img {
   border-style: none;
+  border: 2px solid rgb(25,25,25);
+  box-shadow: 0px;
   max-width: 100%;
   margin-left: 0;
   margin-right: 0;
@@ -118,7 +131,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  /* margin-bottom: 1.45rem; */
 }
 svg:not(:root) {
   overflow: hidden;
@@ -594,4 +607,149 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+/**
+* ----------------------------------------------
+* Accordion styles
+* ----------------------------------------------
+**/
+
+.accordion {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+
+.accordion__item + .accordion__item {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion__button {
+  background-color: rgb(32,32,32);
+  color: #bbbbbb;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+}
+
+.accordion__button:hover {
+  background-color: rgb(38,38,38);
+}
+
+.accordion__button:before {
+  display: inline-block;
+  content: '';
+  height: 10px;
+  width: 10px;
+  margin-right: 12px;
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(-45deg);
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+  transform: rotate(45deg);
+}
+
+[hidden] {
+  display: none;
+}
+
+.accordion__panel {
+  padding: 20px;
+  animation: fadein 0.35s ease-in;
+}
+
+/* -------------------------------------------------- */
+/* ---------------- Animation part ------------------ */
+/* -------------------------------------------------- */
+
+@keyframes fadein {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+
+.project-caption {
+  opacity: 10%;
+  /* background: rgb(30,30,30,.9); */
+  background: seagreen;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.carousel {
+  border-radius: 2px;
+}
+
+.carousel:hover  .project-caption {
+  transition: 1s;
+  opacity: 95%;
+  border: 1px solid darkgreen;
+}
+
+/* .carousel-control-next:hover .project-caption, .carousel-control-prev:hover .project-caption {
+  transition: .5s;
+  opacity: 100%;
+} */
+
+.project-card {
+  color: #efefef;
+  background: rgb(32,32,32);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-card-header {
+  /* margin-bottom: 10px; */
+}
+
+.project-card-more {
+  padding-right: 20;
+  font-size: 30;
+}
+
+.project-card:hover {
+  transition: .1s;
+  background: rgb(38,38,38);
+}
+
+.project-card:hover .project-card-more {
+  transition: .4s;
+  color: seagreen;
+}
+
+.project-card:active .project-card-more {
+  transition: .1s;
+  color: green;
+}
+
+
+.experience-card {
+  background: rgb(32,32,32);
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.experience-card-header {
+  /* margin-bottom: 10px; */
 }

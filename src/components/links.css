@@ -1,0 +1,16 @@
+.links-menu a{
+    margin: 2px;
+    padding: 2px;
+}
+
+.links-menu a:link,
+.links-menu a:visited 
+{
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+.links-menu a:hover{
+    transition: .2s;
+    color: seagreen;
+}

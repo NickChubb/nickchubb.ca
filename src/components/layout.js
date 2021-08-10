@@ -10,6 +10,9 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./Footer"
+
+import 'bootstrap/dist/css/bootstrap.min.css'
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -24,25 +27,45 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+    <div style={{
+      position: 'absolute',
+      height: '100%',
+      width: '100%',
+      left: 0,
+      right: 0,
+      top: 0,
+      bottom: 0,
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-between'
+    }}>
+      <div style={{
+        
+      }}>
+          <div style={{
+            display: 'box'
+          }}>
+              <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+          </div>
+
+        <div
+          style={{
+            margin: `0 auto`,
+            maxWidth: 840,
+            padding: `0 1.0875rem 1.  45rem`,
+          }}
+        >
+          <main style={{
+            display: 'inline'
+          }}>
+            <div style={{paddingTop: 15}}>
+              {children}
+            </div>
+          </main>
+        </div>
       </div>
-    </>
+      <Footer></Footer>
+    </div>
   )
 }
 
