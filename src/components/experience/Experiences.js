@@ -1,7 +1,7 @@
 import React from 'react'
 import Experience from './Experience'
 
-import experience from '../../../data/experience.json'
+import experience from '../../data/experience.json'
 
 const Experiences = () => (
     <>

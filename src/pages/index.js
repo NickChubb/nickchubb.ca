@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 // Import data
-import bio from '../../data/bio.json'
+import bio from '../data/bio.json'
 
 const IndexPage = () => (
   <Layout>

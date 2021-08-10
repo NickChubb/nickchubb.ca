@@ -5,7 +5,7 @@ import {
     Accordion
 } from 'react-accessible-accordion';
 
-import courses from '../../../data/courses.json'
+import courses from '../../data/courses.json'
 
 const Courses = () => (
     <Accordion allowZeroExpanded allowMultipleExpanded>
