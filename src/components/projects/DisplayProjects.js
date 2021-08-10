@@ -7,7 +7,7 @@ import projects from '../../data/projects.json'
 const DisplayProjects = () => (
     <div>
     {
-        projects && projects.length > 0 ?
+        projects != null && projects.length > 0 ?
 
             projects.map((project, key) => {
                 return <ProjectCard project={project} key={key} />

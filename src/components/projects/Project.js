@@ -18,12 +18,12 @@ const Project = ({ project }) => (
                 <h2 style={{
                     marginBottom: 5,
 
-                }}>{project.title}</h2>
-                <small><a href={project.github} target="_blank"><FaGithub /> GitHub</a></small>
+                }}>{project?.title}</h2>
+                <small><a href={project?.github} target="_blank"><FaGithub /> GitHub</a></small>
                 {
-                    project.links && project.links > 0 ?
+                    project?.links && project?.links > 0 ?
 
-                        project.links.map(link => {
+                        project?.links.map(link => {
                             return <small><a href={link.url} target="_blank"> | <BsLink45Deg /> {link.title}</a></small>
                         })
 
@@ -39,7 +39,7 @@ const Project = ({ project }) => (
 
             <ul>
                 {
-                    project.description.map((description, key) => {
+                    project?.description.map((description, key) => {
                         return (<li key={key}>{description}</li>)
                     })
                 }
@@ -50,9 +50,9 @@ const Project = ({ project }) => (
             <Carousel>
                 {
                     
-                    project.image && project.image.length > 0 ? 
+                    project?.image && project?.image.length > 0 ? 
 
-                        project.image.map((image, key) => {
+                        project?.image.map((image, key) => {
                             return (
                                 <Carousel.Item className="project-slide" key={key}>
                                     <img
