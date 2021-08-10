@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Courses from "../components/experience/courses"
+import Courses from "../components/experience/Courses"
 import Experiences from '../components/experience/Experiences'
 
 const ExperiencePage = () => (
