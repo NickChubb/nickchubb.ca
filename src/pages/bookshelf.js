@@ -10,7 +10,7 @@ import books from '../data/books.json'
 const ProjectsPage = () => (
     <Layout>
       <SEO title="bookshelf." />
-      <h2>good books.</h2>
+      <h2>Bookshelf.</h2>
 
       <ul>
         {
