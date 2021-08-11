@@ -2,12 +2,14 @@ import React from 'react'
 import { DateTime } from "luxon";
 import { GoLinkExternal  } from 'react-icons/go';
 
+import { FiGlobe  } from 'react-icons/fi';
+
 const Experience = ({ position }) => (
     <div className='experience-card'>
         <div className='experience-card-header'>
             <h3 style={{
                 marginBottom: 5,
-            }}>{position.company}  <a href={position.website} onClick={(e) => e.stopPropagation()}><GoLinkExternal /></a></h3>
+            }}>{position.company}</h3>
             <div style={{
                 display: 'flex',
                 justifyContent: 'space-between'
@@ -25,6 +27,12 @@ const Experience = ({ position }) => (
             })
         }
         </ul>
+
+        <p style={{
+            textAlign: 'end'
+        }}>
+            <small><a href={position.website}>Website <FiGlobe /></a></small>
+        </p>
 
     </div>
 )

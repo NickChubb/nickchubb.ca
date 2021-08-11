@@ -17,7 +17,7 @@ const Menu = () => (
             // paddingRight: 40
         }}>
             <li><Link to="/">home.</Link></li>
-            <li><Link to="/about">about me.</Link></li>
+            <li><Link to="/about">about.</Link></li>
             <li><Link to="/experience">experience.</Link></li>
             <li><Link to="/bookshelf">bookshelf.</Link></li>
             <li><a href="https://chubb.blog">blog.</a></li>
