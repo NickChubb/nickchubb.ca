@@ -8,7 +8,7 @@ const Links = () => (
     <small className='links-menu' style={{
         padding: 10,
         fontSize: 20,
-        marginLeft: 10
+        marginLeft: 0
     }}>
         <a href="https://github.com/NickChubb" target="_blank">
             <FaGithub />
