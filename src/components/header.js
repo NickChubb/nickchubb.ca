@@ -51,16 +51,18 @@ const Header = ({ siteTitle }) => (
           }}
         >
           <h1 style={{ margin: 15, marginRight: 50, textAlign: 'end' }}>
-            <Link
-              to="/"
-              style={{
-                color: `#eaeaea`,
-                textDecoration: `none`,
-              }}
-            >
-              {siteTitle}
-            </Link>
-            <Links /> 
+            <Row>
+              <Link
+                to="/"
+                style={{
+                  color: `#eaeaea`,
+                  textDecoration: `none`,
+                }}
+              >
+                {siteTitle}
+              </Link>
+              <Links /> 
+            </Row>
           </h1>
           <Menu></Menu>
         </Col>
