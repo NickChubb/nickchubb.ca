@@ -66,5 +66,29 @@
           "description": ""
         }
       ]
+    },
+    {
+      "title": "ReversiRust",
+      "summary": "A Rust implementation of the popular board game Reversi (Othello), using AI algorithms.",
+      "technologies": "Rust",
+      "description": [
+        "",
+        "",
+        ""
+      ],
+      "github": "https://github.com/NickChubb/ReversiRust",
+      "links": [
+        {
+          "title": "Cargo (installation)",
+          "url": "https://crates.io/crates/reversi"
+        }
+      ],
+      "image": [
+        {
+          "path": "https://github.com/NickChubb/ReversiRust/raw/master/game_example.gif",
+          "title": "",
+          "description": ""
+        }
+      ]
     }
   ]

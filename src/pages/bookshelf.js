@@ -12,7 +12,11 @@ const ProjectsPage = () => (
       <SEO title="bookshelf." />
       <h2>Bookshelf.</h2>
 
-      <ul>
+      <ul
+        style={{
+          paddingLeft: 15,
+          paddingRight: 15
+      }}>
         {
           books && books.length > 0 ?
 

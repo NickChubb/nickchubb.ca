@@ -1,9 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import DisplayProjects from "../components/projects/DisplayProjects"
+import Button from "../components/Button"
 
-// Import data
-import bio from '../data/bio.json'
+import { FaLinkedin, FaGithub, FaEnvelope, FaFileAlt } from 'react-icons/fa';
 
 const IndexPage = () => (
   <Layout>
@@ -15,16 +16,29 @@ const IndexPage = () => (
       paddingLeft: 15,
       paddingRight: 15
     }}>
-      {
-        bio && bio.length > 0 ?
+      <p>
+        👋 Hi, I am a Computer Science & Molecular Biology student and aspiring <b>Full-Stack Developer</b>.
+        Currently, I am seeking internship opportunities for the Summer 2022 semester.
+      </p>
 
-          bio.map((p, key) => {
-            return <p key={key}>{p}</p>
-          })
-          :
-          <p>Error loading bio</p>
-      }
+      <div style={{
+        width: '100%',
+        textAlign: 'center',
+      }}>
+        <Button href={'https://nickchubb.github.io/resume/'}>
+          Resume <FaFileAlt />
+        </Button>
+        <Button href={'mailto://nick@nickchubb.ca'}>
+          Email Me <FaEnvelope />
+        </Button>
+      </div>
     </div>
+
+    <hr />
+
+    <h2>Projects.</h2>
+    <DisplayProjects />
+
   </Layout>
 )
 

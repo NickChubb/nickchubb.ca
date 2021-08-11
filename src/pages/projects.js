@@ -7,8 +7,6 @@ import SEO from "../components/seo"
 const ProjectsPage = () => (
     <Layout>
       <SEO title="projects." />
-      <h2>Projects.</h2>
-
       <DisplayProjects />
 
     </Layout>
