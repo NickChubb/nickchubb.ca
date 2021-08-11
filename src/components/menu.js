@@ -4,14 +4,17 @@ import React from 'react'
 const Menu = () => (
     <div style={{
         // background: '#f4f4f4',
-        paddingTop: '10px'
+        paddingTop: 10,
+        paddingRight: 15,
     }}>
         <ul style={{
             listStyle: 'none',
             display: 'flex',
-            justifyContent: 'space-evenly',
+            justifyContent: 'space-around',
             maxWidth: 840,
-            marginBottom: 0
+            marginBottom: 0,
+            // paddingLeft: 40,
+            // paddingRight: 40
         }}>
             <li><Link to="/">bio.</Link></li>
             <li><Link to="/projects">projects.</Link></li>
