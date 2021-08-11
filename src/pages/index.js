@@ -11,7 +11,9 @@ const IndexPage = () => (
     <h2>Bio.</h2>
     <div style={{
       textAlign: 'justify',
-      textJustify: 'inter-word'
+      textJustify: 'inter-word',
+      paddingLeft: 15,
+      paddingRight: 15
     }}>
       {
         bio && bio.length > 0 ?
