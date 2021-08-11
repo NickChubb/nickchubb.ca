@@ -5,6 +5,8 @@ import Menu from "./menu"
 import Image from "./image"
 import Links from "./links"
 
+import { Container, Row, Col } from "react-bootstrap"
+
 import background from "../images/grainy_background.png";
 
 const Header = ({ siteTitle }) => (
@@ -18,46 +20,52 @@ const Header = ({ siteTitle }) => (
       boxShadow: '1px 1px 5px rgba(15,15,15,.3)',
     }}
   >
-    <div
+    <Container
       style={{
         margin: `0 auto`,
         maxWidth: 840,
         // padding: `1.45rem 1.0875rem`,
-        paddingTop: 10,
-        paddingBottom: 10,
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
+        paddingTop: 20,
+        paddingBottom: 20,
+        // display: 'flex',
+        // flexDirection: 'row',
+        // alignItems: 'center',
+        // justifyItems: 'center',
       }}
     >
-      <Image />
-      <div 
-        style={{
-          // margin: `0 auto`,
-          // maxWidth: 960,
-          // padding: `1.45rem 1.0875rem`,
-          width: '70%',
-          display: 'flex',
-          flexDirection: 'column',
-          textAlign: 'right', 
-          marginTop: 100
-        }}
-      >
-        <h1 style={{ margin: 15, marginRight: 50 }}>
-          <Link
-            to="/"
-            style={{
-              color: `#eaeaea`,
-              textDecoration: `none`,
-            }}
-          >
-            {siteTitle}
-          </Link>
-          <Links /> 
-        </h1>
-        <Menu></Menu>
-      </div>
-    </div>
+      <Row style={{
+          alignItems: 'center',
+          justifyContent: 'center'
+        }} >
+        <Image />
+        <Col 
+          style={{
+            // margin: `0 auto`,
+            // maxWidth: 960,
+            // padding: `1.45rem 1.0875rem`,
+            width: '70%',
+            // display: 'flex',
+            // flexDirection: 'column',
+            // textAlign: 'right', 
+            // marginTop: 100
+          }}
+        >
+          <h1 style={{ margin: 15, marginRight: 50, textAlign: 'end' }}>
+            <Link
+              to="/"
+              style={{
+                color: `#eaeaea`,
+                textDecoration: `none`,
+              }}
+            >
+              {siteTitle}
+            </Link>
+            <Links /> 
+          </h1>
+          <Menu></Menu>
+        </Col>
+      </Row>
+    </Container>
     <hr></hr>
   </header>
 )

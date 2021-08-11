@@ -9,7 +9,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h2>Bio.</h2>
-    <div>
+    <div style={{
+      textAlign: 'justify',
+      textJustify: 'inter-word'
+    }}>
       {
         bio && bio.length > 0 ?
 
