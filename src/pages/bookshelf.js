@@ -12,6 +12,8 @@ const ProjectsPage = () => (
       <SEO title="bookshelf." />
       <h2>Bookshelf.</h2>
 
+      <p>Books I have enjoyed thoroughly and frequently recommend to friends.</p>
+
       <ul
         style={{
           paddingLeft: 15,

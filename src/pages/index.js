@@ -18,7 +18,7 @@ const IndexPage = () => (
     }}>
       <p>
         👋 Hi, I am a Computer Science & Molecular Biology student and aspiring <b>Full-Stack Developer</b>.
-        Currently, I am seeking internship opportunities for the Summer 2022 semester.
+        I am currently seeking internship opportunities for the Summer 2022 semester.
       </p>
 
       <div style={{
