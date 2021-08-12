@@ -72,14 +72,14 @@
       "summary": "A Rust implementation of the popular board game Reversi (Othello), using AI algorithms.",
       "technologies": "Rust",
       "description": [
-        "",
-        "",
-        ""
+        "A Rust implementation of the popular board game Reversi (Othello)",
+        "AI uses Monte Carlo Tree Search algorithm with two different heuristics for multiple bot difficulties",
+        "Created for Artifical Intelligence Survey (CMPT 310) final project - Grade: 18/18 (100%)"
       ],
       "github": "https://github.com/NickChubb/ReversiRust",
       "links": [
         {
-          "title": "Cargo (installation)",
+          "title": "Crates.io (installation)",
           "url": "https://crates.io/crates/reversi"
         }
       ],
