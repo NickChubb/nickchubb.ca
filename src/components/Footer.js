@@ -14,7 +14,7 @@ const Footer = ( position ) => (
       }}>
         <Menu></Menu>
         <hr />
-        <small><i>Copyright Nick Chubb &copy; 2021, Built with Gatsby</i></small>
+        <small><i>Copyright Nick Chubb &copy; 2021, Built with GatsbyJS.</i></small>
         <br /><br></br>
     </div>
 )
