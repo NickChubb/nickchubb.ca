@@ -15,7 +15,7 @@ const ExperiencePage = () => (
 
       <hr></hr>
 
-      <h2>Courses</h2>
+      <h2>Relevant Courses.</h2>
 
       <Courses />
       
