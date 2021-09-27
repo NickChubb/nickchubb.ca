@@ -16,10 +16,17 @@ const IndexPage = () => (
       paddingLeft: 15,
       paddingRight: 15
     }}>
-      <p>
-        👋 Hi, I am a Computer Science & Molecular Biology student and aspiring <b>Full-Stack Developer</b>.
-        I am currently seeking internship opportunities for the Summer 2022 semester.
-      </p>
+      <p> 👋 Hi, my name is Nick Chubb. I am a...</p>
+
+        <ul style={{
+          listStyle: 'none',
+        }}>
+          <li>🖥 Computer Science & Molecular Biology student at Simon Fraser University</li>
+          <li>🚀 Front-end Developer at <a href="https://skyrocket.is/">Skyrocket Digital</a>.</li>
+          <li>👨🏼‍💼 Account Manager for <a href="https://https://vanstartupweek.ca/">Vancouver Startup Week</a>.</li>
+        </ul>
+
+      <p>I am an aspiring <b>full-stack developer</b> who is currently seeking internship opportunities for the Summer 2022 semester.  If you or someone you know are hiring, I would love to hear from you!</p>
 
       <div style={{
         width: '100%',
@@ -27,6 +34,9 @@ const IndexPage = () => (
       }}>
         <Button href={'https://nickchubb.github.io/resume/'}>
           Resume <FaFileAlt />
+        </Button>
+        <Button href={'https://www.linkedin.com/in/nickrchubb/'}>
+          Linkedin <FaLinkedin />
         </Button>
         <Button href={'mailto://nick@nickchubb.ca'}>
           Email Me <FaEnvelope />

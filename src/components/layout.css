@@ -18,7 +18,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
-  background-color: rgb(26,26,26);
+  background-color: rgb(26,27,26);
 }
 a:link,
 a:visited
@@ -28,7 +28,10 @@ a:visited
 }
 a:hover {
   transition: .2s;
-  color: green;
+  color: #229756;
+}
+a:active {
+  color: #256f46;
 }
 article,
 aside,
@@ -734,11 +737,23 @@ pre tt:after {
   color: seagreen;
 }
 
-.project-card:active .project-card-more {
-  transition: .1s;
-  color: green;
+.project-card:hover .project-card-title {
+  transition: .4s;
+  color: seagreen;
 }
 
+.project-card:hover .project-card {
+  box-shadow: 5px 10px #888888;
+}
+
+.project-card:active .project-card-more {
+  /* color: #229756; */
+  color: #256f46;
+}
+
+.project-card:active .project-card-title {
+  color: #256f46;
+}
 
 .experience-card {
   background: rgb(32,32,32);

@@ -17,7 +17,7 @@ const ProjectCard = ({ project }) => (
         <div>
             <div className="project-card-header">
 
-                <h3 style={{
+                <h3 className="project-card-title" style={{
                     marginBottom: 5,
                 }}>{project.title} </h3>
                 <small><i>{project.technologies}</i></small>
