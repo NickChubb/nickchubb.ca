@@ -18,7 +18,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
-  background-color: rgb(26,27,26);
+  background-color: rgb(27,27,26);
 }
 a:link,
 a:visited
