@@ -63,10 +63,10 @@ const Project = ({ project }) => (
                                         src={image.path}
                                         alt="First slide"
                                         />
-                                        <Carousel.Caption className="project-caption">
+                                        {/* <Carousel.Caption className="project-caption">
                                             <h3>{image.title}</h3>
                                             <p>{image.description}</p>
-                                        </Carousel.Caption>
+                                        </Carousel.Caption> */}
                                     </Carousel.Item>   
                                 )
                             })

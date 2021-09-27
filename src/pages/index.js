@@ -16,14 +16,14 @@ const IndexPage = () => (
       paddingLeft: 15,
       paddingRight: 15
     }}>
-      <p> 👋 Hi, my name is Nick Chubb. I am a...</p>
+      <p>Hi, my name is Nick Chubb. I am a...</p>
 
         <ul style={{
           listStyle: 'none',
         }}>
           <li>🖥 Computer Science & Molecular Biology student at Simon Fraser University</li>
-          <li>🚀 Front-end Developer at <a href="https://skyrocket.is/">Skyrocket Digital</a>.</li>
-          <li>👨🏼‍💼 Account Manager for <a href="https://https://vanstartupweek.ca/">Vancouver Startup Week</a>.</li>
+          <li>🚀 Front-end Developer at <a href="https://skyrocket.is/">Skyrocket Digital</a></li>
+          <li>👨🏼‍💼 Account Manager for <a href="https://https://vanstartupweek.ca/">Vancouver Startup Week</a></li>
         </ul>
 
       <p>I am an aspiring <b>full-stack developer</b> who is currently seeking internship opportunities for the Summer 2022 semester.  If you or someone you know are hiring, I would love to hear from you!</p>
