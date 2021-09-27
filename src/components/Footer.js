@@ -9,7 +9,7 @@ const Footer = ( position ) => (
         backgroundImage: `url(${background})`,
         marginTop: 50,
         paddingTop: 10,
-        boxShadow: '-2px -1px 5px rgba(15,15,15,.3)',
+        boxShadow: '-2px -1px 0px rgba(15,15,15,.3)',
         textAlign: '-webkit-center'
       }}>
         <Menu></Menu>
