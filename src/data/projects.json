@@ -5,8 +5,10 @@
       "technologies": "ReactJS, Node.js, Express.js, Docker",
       "description": [
         "Modular server back-end which utilizes Node.js and Docker to serve containers on the same web domain",
-        "Uses Node.js as the backend to ",
-        "Utilizes SQLite3 database to store information about containers, logs, and more"
+        "Uses Node.js as the backend to manage routing private and public routes",
+        "Utilizes SQLite3 database to store information about containers, logs, and more",
+        "Log screen shows login history and more for Dockerman app",
+        "Config screen allows users to simply change app configuration parameters"
       ],
       "github": "https://github.com/NickChubb/dockerman",
       "links": [
