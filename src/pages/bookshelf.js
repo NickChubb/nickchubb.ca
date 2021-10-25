@@ -17,6 +17,7 @@ const ProjectsPage = () => {
     fetch(url)
       .then(response => response.json())
       .then(resultData => {
+        console.log(resultData);
         setBio(resultData)
     })
   })
