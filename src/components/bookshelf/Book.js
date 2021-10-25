@@ -6,7 +6,7 @@ import { BsLink45Deg  } from 'react-icons/bs';
 const Book = ({ book, key }) => (   
     <li className="links-menu">
         <a href={book.Link} target="_blank" >
-            <b>{book.Title}</b> <i>by</i> {ook.Author} <small style={{ color: 'seagreen'}}><BsLink45Deg /></small>
+            <b>{book.Title}</b> <i>by</i> {book.Author} <small style={{ color: 'seagreen'}}><BsLink45Deg /></small>
         </a>
         <br />
         {
