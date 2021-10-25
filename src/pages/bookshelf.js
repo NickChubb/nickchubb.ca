@@ -5,8 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Book from "../components/bookshelf/Book"
 
-// import books from '../data/books.json'
-
 const ProjectsPage = () => {
 
   // Retrieve books from server
@@ -17,7 +15,6 @@ const ProjectsPage = () => {
     fetch(url)
       .then(response => response.json())
       .then(resultData => {
-        console.log(resultData);
         setBooks(resultData)
     })
   }, [])

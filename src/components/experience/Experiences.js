@@ -1,22 +1,35 @@
 import React from 'react'
 import Experience from './Experience'
 
-import experience from '../../data/experience.json'
+const Experiences = () => {
+    
+    // Retrieve experience from server
+    const [experience, setExperience] = useState([]);
+    useEffect(() => {
 
-const Experiences = () => (
-    <>
-        {
-            experience && experience.length >= 0 ?
+        const url = `https://nickchubb.ca/api/experience`
+        fetch(url)
+        .then(response => response.json())
+        .then(resultData => {
+            setExperience(resultData)
+        })
+    }, [])
 
-                experience.map((position) => {
-                    if (position.display) {
-                        return (<Experience position={position} />)
-                    }
-                })
-                : 
-                <p>Error loading experience.</p>
-        } 
-    </>
-)
+    return (
+        <>
+            {
+                experience && experience.length >= 0 ?
+
+                    experience.map((position) => {
+                        if (position.display) {
+                            return (<Experience position={position} />)
+                        }
+                    })
+                    : 
+                    <p>Error loading experience.</p>
+            } 
+        </>
+    )
+}
 
 export default Experiences

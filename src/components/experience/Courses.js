@@ -5,20 +5,33 @@ import {
     Accordion
 } from 'react-accessible-accordion';
 
-import courses from '../../data/courses.json'
+const Courses = () => {
+    
+    // Retrieve courses from server
+    const [courses, setCourses] = useState([]);
+    useEffect(() => {
 
-const Courses = () => (
-    <Accordion allowZeroExpanded allowMultipleExpanded>
-        {
-            courses && courses.length >= 0 ?
+        const url = `https://nickchubb.ca/api/courses`
+        fetch(url)
+        .then(response => response.json())
+        .then(resultData => {
+            setCourses(resultData)
+        })
+    }, [])
 
-                courses.map((course, key) => {
-                    return (<Course key={key} course={course} />);
-                })
-                :
-                <p>Error loading courses.</p>
-        }
-    </Accordion>
-)
+    return (
+        <Accordion allowZeroExpanded allowMultipleExpanded>
+            {
+                courses && courses.length >= 0 ?
+
+                    courses.map((course, key) => {
+                        return (<Course key={key} course={course} />);
+                    })
+                    :
+                    <p>Error loading courses.</p>
+            }
+        </Accordion>
+    )
+}
 
 export default Courses
