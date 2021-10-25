@@ -1,21 +1,25 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+// Import data
+import bio from '../data/bio.json'
+
 const About = () => {
   
   // Retrieve bio from server
-  const [bio, setBio] = useState([]);
-  useEffect(() => {
+  // const [bio, setBio] = useState([]);
+  // useEffect(() => {
 
-    const url = `https://nickchubb.ca/api/bio`
-    fetch(url)
-      .then(response => response.json())
-      .then(resultData => {
-        setBio(resultData)
-    })
-  })
+  //   const url = `https://nickchubb.ca/api/bio`
+  //   fetch(url)
+  //     .then(response => response.json())
+  //     .then(resultData => {
+  //       setBio(resultData)
+  //   })
+  // })
 
   return (
     <Layout>

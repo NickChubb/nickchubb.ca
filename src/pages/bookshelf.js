@@ -5,9 +5,23 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Book from "../components/bookshelf/Book"
 
-import books from '../data/books.json'
+// import books from '../data/books.json'
 
-const ProjectsPage = () => (
+const ProjectsPage = () => {
+
+  // Retrieve books from server
+  const [books, setBooks] = useState([]);
+  useEffect(() => {
+
+    const url = `https://nickchubb.ca/api/books`
+    fetch(url)
+      .then(response => response.json())
+      .then(resultData => {
+        setBio(resultData)
+    })
+  })
+  
+  return (
     <Layout>
       <SEO title="bookshelf." />
       <h2>Bookshelf.</h2>
@@ -32,5 +46,6 @@ const ProjectsPage = () => (
       
     </Layout>
   )
+}
 
 export default ProjectsPage;
