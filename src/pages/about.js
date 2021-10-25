@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -7,10 +6,10 @@ import SEO from "../components/seo"
 const About = () => {
   
   // Retrieve bio from server
-  const [bio, setBio] = useState([])
+  const [bio, setBio] = useState([]);
   useEffect(() => {
 
-    const url = `https://nickchubb.ca/api/books`
+    const url = `https://nickchubb.ca/api/bio`
     fetch(url)
       .then(response => response.json())
       .then(resultData => {
