@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => (
     <div 
     className="project-card"
     onClick={() => {
-        navigate(`/projects/${project.title}`,
+        navigate(`/projects/${project.Title}`,
         {
           state:  project
         });
@@ -19,11 +19,11 @@ const ProjectCard = ({ project }) => (
 
                 <h3 className="project-card-title" style={{
                     marginBottom: 5,
-                }}>{project.title} </h3>
-                <small><i>{project.technologies}</i></small>
+                }}>{project.Title} </h3>
+                <small><i>{project.Technologies}</i></small>
             </div>
             <br />
-            <span>{'👉 ' + project.summary}</span>
+            <span>{'👉 ' + project.Summary}</span>
         </div>
         <div className="project-card-more" style={{ 
             paddingRight: 20,

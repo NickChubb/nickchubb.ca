@@ -21,7 +21,7 @@ const Experiences = () => {
                 experience && experience.length >= 0 ?
 
                     experience.map((position) => {
-                        if (position.display) {
+                        if (position.Display) {
                             return (<Experience position={position} />)
                         }
                     })

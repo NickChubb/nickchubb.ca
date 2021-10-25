@@ -18,14 +18,14 @@ const Project = ({ project }) => (
                 <h2 style={{
                     marginBottom: 5,
 
-                }}>{project?.title}</h2>
-                <small><a href={project?.github} target="_blank"><FaGithub /> GitHub </a></small>
+                }}>{project?.Title}</h2>
+                <small><a href={project?.Github} target="_blank"><FaGithub /> GitHub </a></small>
                 {
-                    project?.links && project?.links.length > 0 ?
+                    project?.Links && project?.Links.length > 0 ?
 
-                        project?.links.map((link, key) => {
-                            if (link.title != "" && link.url != "") {
-                                return <small key={key}>| <a href={link.url} target="_blank"><BsLink45Deg /> {link.title} </a></small>
+                        project?.Links.map((link, key) => {
+                            if (link.Title != "" && link.Url != "") {
+                                return <small key={key}>| <a href={link.Url} target="_blank"><BsLink45Deg /> {link.Title} </a></small>
                             }
                         })
 
@@ -41,7 +41,7 @@ const Project = ({ project }) => (
 
             <ul>
                 {
-                    project?.description.map((description, key) => {
+                    project?.Description.map((description, key) => {
                         return (<li key={key}>{description}</li>)
                     })
                 }
@@ -51,16 +51,16 @@ const Project = ({ project }) => (
         
             <Carousel>
                 {
-                    project?.image && project?.image.length > 0 ? 
+                    project?.Image && project?.Image.length > 0 ? 
 
-                        project?.image.length > 1 ?
+                        project?.Image.length > 1 ?
                             // If more than one image display carousel
-                            project?.image.map((image, key) => {
+                            project?.Image.map((image, key) => {
                                 return (
                                     <Carousel.Item key={key} className="project-slide" key={key}>
                                         <img
                                         className="d-block w-100"
-                                        src={image.path}
+                                        src={image.Path}
                                         alt="First slide"
                                         />
                                         {/* <Carousel.Caption className="project-caption">
@@ -74,7 +74,7 @@ const Project = ({ project }) => (
                             // Else display one image
                             <img
                                         className="d-block w-100"
-                                        src={project.image[0].path}
+                                        src={project.Image[0].path}
                                         />
                         :
                         <p>No images to display.</p>

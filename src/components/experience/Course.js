@@ -12,12 +12,12 @@ const Course = ({ course, key }) => (
     <AccordionItem>
         <AccordionItemHeading>
             <AccordionItemButton>
-                <b>{course.title}</b>  <i> -- {course.num}</i>
+                <b>{course.Title}</b>  <i> -- {course.Num}</i>
             </AccordionItemButton>
         </AccordionItemHeading>
         <AccordionItemPanel>
             <p>
-                {course.description} <a href={course.link}><GoLinkExternal /></a>
+                {course.Description} <a href={course.Link}><GoLinkExternal /></a>
             </p>
         </AccordionItemPanel>
     </AccordionItem>

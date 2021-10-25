@@ -14,15 +14,15 @@ const Experience = ({ position }) => (
                 display: 'flex',
                 justifyContent: 'space-between'
             }}>
-                <i>{position.title}</i>
-                <i>{DateTime.fromISO(position.startDate).toFormat('LLL yyyy')} -- {position.finishDate != 'present' ? DateTime.fromISO(position.finishDate).toFormat('LLL yyyy') : position.finishDate}</i> 
+                <i>{position.Title}</i>
+                <i>{DateTime.fromISO(position.StartDate).toFormat('LLL yyyy')} -- {position.FinishDate != 'present' ? DateTime.fromISO(position.FinishDate).toFormat('LLL yyyy') : position.FinishDate}</i> 
             </div>
         </div>
         <br />
 
         <ul>
         {
-            position.description.map(description => {
+            position.Description.map(description => {
                 return (<li>{description}</li>)
             })
         }
@@ -31,7 +31,7 @@ const Experience = ({ position }) => (
         <p style={{
             textAlign: 'end'
         }}>
-            <small><a href={position.website}>Website <FiGlobe /></a></small>
+            <small><a href={position.Website}>Website <FiGlobe /></a></small>
         </p>
 
     </div>
