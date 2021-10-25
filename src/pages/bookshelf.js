@@ -18,7 +18,7 @@ const ProjectsPage = () => {
       .then(response => response.json())
       .then(resultData => {
         console.log(resultData);
-        setBio(resultData)
+        setBooks(resultData)
     })
   })
   
