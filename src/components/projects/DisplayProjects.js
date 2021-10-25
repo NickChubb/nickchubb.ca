@@ -2,20 +2,18 @@ import React, { useState, useEffect } from 'react'
 
 import ProjectCard from "./ProjectCard"
 
-import projects from '../../data/projects.json'
-
 const DisplayProjects = () => {
     
     // Retrieve projects from server
     const [projects, setProjects] = useState([]);
     useEffect(() => {
 
-    const url = `https://nickchubb.ca/api/books`
-    fetch(url)
-        .then(response => response.json())
-        .then(resultData => {
-        setProjects(resultData)
-    })
+        const url = `https://nickchubb.ca/api/projects`
+        fetch(url)
+            .then(response => response.json())
+            .then(resultData => {
+            setProjects(resultData)
+        })
     }, [])
     
     return (
