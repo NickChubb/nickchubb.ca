@@ -20,7 +20,7 @@ const ProjectsPage = () => {
         console.log(resultData);
         setBooks(resultData)
     })
-  })
+  }, [])
   
   return (
     <Layout>
