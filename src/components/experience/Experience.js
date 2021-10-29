@@ -9,7 +9,7 @@ const Experience = ({ position }) => (
         <div className='experience-card-header'>
             <h3 style={{
                 marginBottom: 5,
-            }}>{position.company}</h3>
+            }}>{position.Company}</h3>
             <div style={{
                 display: 'flex',
                 justifyContent: 'space-between'
