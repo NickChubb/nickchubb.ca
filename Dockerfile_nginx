@@ -1,0 +1,27 @@
+FROM node:latest as builder
+
+WORKDIR /usr/src/app
+
+#RUN apt-get update && apt-get install -y curl
+#RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+#RUN apt-get update && apt-get install -y nodejs
+
+ENV PATH /app/node_modules/.bin:$PATH
+
+VOLUME ["/usr/src/app/data"]
+
+COPY . .
+RUN npm install
+
+#RUN npm run build
+RUN ["npm", "run", "build"]
+
+FROM nginx:alpine
+
+WORKDIR /usr/share/nginx/html
+
+RUN rm -rf ./*
+
+COPY --from=builder /usr/src/app/public .
+
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
