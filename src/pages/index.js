@@ -22,11 +22,11 @@ const IndexPage = () => (
           listStyle: 'none',
         }}>
           <li>🖥 Computer Science & Molecular Biology student at Simon Fraser University</li>
-          <li>🚀 Front-end Developer at <a href="https://skyrocket.is/">Skyrocket Digital</a></li>
+          <li>🐻 Junior Developer at <a href="https://machobear.ca/">Machobear Studios</a></li>
           <li>👨🏼‍💼 Account Manager for <a href="https://https://vanstartupweek.ca/">Vancouver Startup Week</a></li>
         </ul>
 
-      <p>I am an aspiring <b>full-stack developer</b> who is currently seeking internship opportunities for the Summer 2022 semester.  If you or someone you know are hiring, I would love to hear from you!</p>
+  🐻    <p>I am an aspiring <b>full-stack developer</b> and I will be seeking employment opportunities for Spring 2023. If you or someone you know are hiring, I would love to hear from you!</p>
 
       <div style={{
         width: '100%',
